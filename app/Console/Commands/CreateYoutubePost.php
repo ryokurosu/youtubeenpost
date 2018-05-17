@@ -83,7 +83,7 @@ class CreateYoutubePost extends Command
         $movie_url = $baseurl.$movie_code;
         $rank = $index + 1;
         $ret_data .= "<h2>【{$rank}位】{$movie_title}</h2>" . PHP_EOL. PHP_EOL;
-        $ret_data .= '<div class="youtube-container"><iframe width="728" height="410" src="https://www.youtube.com/embed/'.$movie_code.'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>' . PHP_EOL. PHP_EOL;
+        $ret_data .= '<iframe width="728" height="410" src="https://www.youtube.com/embed/'.$movie_code.'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>' . PHP_EOL. PHP_EOL;
         $ret_data .= "<blockquote>{$movie_description}</blockquote>" . PHP_EOL. PHP_EOL;
 
     }catch(Exception $e){
